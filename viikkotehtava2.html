@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+    <title>Viikkotehtävät 2</title>
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="https://meijastiina.github.io/ohjelmoinnin_perusteet_javascript/favicon.ico"> -->
+	<link rel="stylesheet" href="./WS1 - Hello World_files/styles.css">
+</head>
+<body>
+    <header>
+        <h2><a>Ohjelmistotuotannon ja ohjelmoinnin perusteet</a></h2>
+     <!--   <img src="./WS1 - Hello World_files/javascript.png" alt="JavaScript Logo">  -->
+        <h1>Viikkotehtävät 2</h1>
+    </header>
+    <main>
+        <!-- Tehtävä 1. BOM -->
+        <h2>Tehtävä 1: Selaimen tiedot</h2>
+		<p>Tulosta alla olevaan laatikkoon, mitä selainta käyttäjä käyttää ja millä sivulla hän on. Tarvittaessa katso dokumentaatiota w3schools-sivustolta.</p>
+		<div id="write-task1" class="bordered">
+
+        </div>
+        <!-- Tehtävä 2. Painikkeet -->
+        <h2>Tehtävä 2</h2>
+		<p>Toteuta painikkeille toiminnallisuus, niin että vasemman puoleinen ohjaa käyttäjän googleen ja oikeanpuolimmainen siirtyy bingiin.</p>
+		<div class="bordered">
+            <button id="togoogle">&lt;&lt; Googleen</button>
+            <button id="tobing">Bingiin &gt;&gt;</button>
+        </div>
+        <hr>
+        <!-- Tehtävä 3. DOM -->
+        <h2>Tehtävä 3</h2>
+		<p>Harjoittele DOM:n käyttöä etsimällä seuraavat elementit seuraavilla metodeilla:</p>
+        <ol>
+            <li>
+                Etsi elementti, jonka id on etsi-taa ja muuta sen sisällöksi "Minut löydettiin ID:n perusteella."
+            </li>
+            <li>
+                Etsi elementti, jonka id on etsi-taa ja muuta sen luokaksi bordered.
+            </li>
+            <li>
+                Etsi h1-elementti ja muuta sen sisällöksi: "Minä olen h1-elementti."
+            </li>
+            <li>
+                Etsi kaikki elementit, joilla on luokka bordered ja lisää niistä ensimmäiselle luokaksi red-border."
+            </li>
+        </ol>
+        <div class="bordered">
+            <span id="etsi-taa"></span>
+        </div>
+        <hr>
+        <!-- Tehtävä 4. Ehtolauseet -->
+        <h2>Tehtävä 4</h2>
+		<p>Luo muuttuja <span class="code">grade</span> ja anna sille arvoksi 0. Kirjoita ehtolause, jossa testataan <span class="code">grade</span>-muuttujan arvon perusteella onko opiskelija päässyt kurssin läpi. Tulosta alla olevaan laatikkoon "Olet läpäissyt kurssin", jos muuttujan arvo on suurempi tai yhtäsuuri kuin 1. Testaa vaihtamalla muuttujan arvo 1</p>
+        <div id="grade" class="bordered"></div>
+        <hr>
+          <!-- Tehtävä 5. Else-lause -->
+        <h2>Tehtävä 5</h2>
+		<p>Lisää ehtolauseeseesi else-haara, jolla tulostetaan "Et läpäissyt kurssia", jos muuttujan arvo on 0. Vastaavasti, jos arvo on suurempi tai yhtäsuuri kuin 1, tulostetaan "Olet läpäissyt kurssin"</p>
+		 <div id="grade-else" class="bordered"></div>
+        <hr>
+		<!-- Tehtävä 6. Elseif-lause -->
+        <h2>Tehtävä 6</h2>
+		<p>Lisää ehtolauseeseesi else-haarat jokaiselle arvosanalle. 0 tulostaa "Hylätty", 1 tulostaa "Välttävä", 2 "Tyydyttävä", 3 "Hyvä", 4 "Kiitettävä" ja 5 "Erinomainen"</p>
+		<div id="grade-elseif" class="bordered"></div>
+        <hr>
+		<!-- Tehtävä 7. Elseif-lause -->
+        <h2>Tehtävä 7</h2>
+		<p> Kirjoita ehtolause, joka toivottaa "Mukavaa talven jatkoa!" marras-helmikuussa, "Kivaa kevättä!" maalis-toukokuussa, "Hyvää kesää!" kesä-elokuussa ja "Synkkää syksyä!" syys-marraskuussa. Kuukauden numeron saat </p>
+		<p> Kuukauden saat esimerkiksi käyttämällä <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/Date" target="_blank">Date()</a>-konstruktoria ja <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getMonth" target="_blank">getMonth()</a>-metodia.</p>
+		<div id="tervehdys" class="bordered"></div>
+        <hr>
+		<!-- Tehtävä 8. Lomakkeen tarkastus -->
+		<h2>Tehtävä 8</h2>
+		<p>Tarkasta alla olevasta lomakkeesta lähetä-painiketta painaessa, että kaikissa kentissä on tietoa. Jos kaikissa kentissä on tietoa, näytä alert-box, jossa on viesti "Lomake lähetetty onnistuneesti", jos ei näytä viesti "Lomakkeella virhe! Täytä kaikki kentät".</p>
+        <p>Huom! Miten estetään se, että lomaketta ei virhetilanteessa lähetetä?</p>
+        <form id="userForm" class="bordered">
+            <label for="email">email: </label><input type="text" id="email-input">
+            <label for="password">password: </label><input type="text" id="password-input">
+            <input type="submit">
+        </form>
+        <hr>
+      <!-- Sisältö päättyy-->
+    </main>
+
+    <footer>
+        <a href="viikkotehtava1.html">&lt;&lt; Edellinen</a> || <a href="viikkotehtava3.html">Seuraava &gt;&gt;</a>
+        <p>© Mikko Kulmala</p>
+    </footer>
+	    <script src="ws2.js"></script>
+</body></html>
