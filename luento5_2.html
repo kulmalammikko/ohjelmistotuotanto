@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+    <title>Luento 5 kertaustehtäviä</title>
+
+	<link rel="stylesheet" href="./WS1 - Hello World_files/styles.css">
+</head>
+<body>
+    <header>
+        <h2><a>Ohjelmistotuotannon ja ohjelmoinnin perusteet</a></h2>
+
+        <h1>Kertausta - luento viisi</h1>
+    </header>
+    <main>
+
+        <h2>Tehtävä 1: Luo muuttujat a ja b. Hae niihin tiedot alla olevilta lomakkeilta, laske luvut yhteen ja kirjoita alla olevaan taulukkoon.</h2>
+		<label for="luku">Muuttuja a:</label><input type="text" id="vara" value="0"> <br><br>
+		<label for="luku">Muuttuja b:</label><input type="text" id="varb" value="0"> <br><br>
+		<button onclick="calculate()">Tulosta</button> <br><br>
+		<div id="write-task1" class="bordered">
+        </div>
+		
+		<script>
+		function calculate() {
+		var a = Number(document.getElementById("vara").value);
+		var b = Number(document.getElementById("varb").value);
+		document.getElementById("write-task1").innerHTML = a + b;
+		}
+		</script>
+
+        <h2>Tehtävä 2: Luo muuttujat fname = 'Leo' js lname = 'Messi'. Yhdistä muuttujaan fullName, muista lisätä väli.</h2>
+		<label for="luku">Etunimi:</label><input type="text" id="fname" value="0"> <br><br>
+		<label for="luku">Sukunimi:</label><input type="text" id="lname" value="0"> <br><br>
+		<button onclick="concate()">Tulosta</button> <br><br>
+		<div id="write-task2" class="bordered">
+
+        </div>
+		<script>
+		function concate() {
+		var a = document.getElementById("fname").value;
+		var b = document.getElementById("lname").value;
+		document.getElementById("write-task2").innerHTML = a + ' ' + b;
+		}
+		</script>
+
+        <h2>Tehtävä 3: Luo ehtolause, joka tarkastaa fname-muuttujan. Jos se on "Leo", kirjoita alla olevaan laatikkoon "Maali!!".</h2>
+		<div id="write-task3" class="bordered">
+
+        </div>
+
+        <h2>Tehtävä 4: Lisää else-lause, joka kirjoita alla olevaan laatikkoon "Ei maalia".</h2>
+		<div id="write-task4" class="bordered">
+
+        </div>
+        <h2>Tehtävä 5: Lisää edelliseen else if-lauseet, jotka kirjoittavat "Maali", jos nimi on Zlatan tai Ronaldo</h2>
+		<div id="write-task5" class="bordered">
+		
+		<h2>Tehtävä 6: Luo toistolause, joka kirjoitaa käyttäjän antaman määrän "Maali" tekstiä alla olevalle riville.</h2>
+		<div id="write-task6" class="bordered">
+
+        </div>
+		
+		<h2>Tehtävä 7: Luo toistolause, joka kirjoitaa alle 8 kertaa vuorotellen "Maali" ja "Ei maalia". Huomaa, iteraattorin parillisuus ja parittomuus.</h2>
+		<div id="write-task7" class="bordered">
+
+        </div>
+
+		<h2>Tehtävä 8: Luo toistolause, joka laskee käyttäjän antamasta sanasta vokaalit ja konsonantit. Tulosta vokaalien määrä tähän alle.</h2>
+		<div id="write-task8" class="bordered">
+
+        </div>
+		
+
+    </main>
+	<!--	<script src="vt5.js"></script> -->
+    <footer>
+        <a href="viikkotehtava3.html">&lt;&lt; Edellinen</a> || <a href="index.html">Seuraava &gt;&gt;</a>
+        <p>© Mikko Kulmala</p>
+    </footer>
+</body></html>
