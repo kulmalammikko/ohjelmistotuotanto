@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+    <title>Viikkotehtävät 3</title>
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="https://meijastiina.github.io/ohjelmoinnin_perusteet_javascript/favicon.ico"> -->
+	<link rel="stylesheet" href="./WS1 - Hello World_files/styles.css">
+</head>
+<body>
+    <header>
+        <h1><a>Ohjelmistotuotannon ja ohjelmoinnin perusteet</a></h1>
+     <!--   <img src="./WS1 - Hello World_files/javascript.png" alt="JavaScript Logo">  -->
+        <h1>Viikkotehtävät 3</h1>
+    </header>
+    <main>
+	
+		<h2>1. Toistolause</h2>
+        <p>Kirjoita alla olevaan taulukkooon toistolauseella kolme kertaa "Eläköön!".</p>
+		<div id="loopText" class="bordered"></div>
+        <hr>
+		
+       <!-- Tehtävä 2. ensimmäinen toistolause -->
+        <h2>2. Toistolause</h2>
+        <p>Alla olevalle lomakkeelle käyttäjä syöttää toistettavan lauseen ja lukumäärän montako kertaa lausetta halutaan syöttää. Sen jälkeen painiketta painamalla allaolevaan laatikkoon generoidaan syötteiden perusteella teksti.</p>
+        <form>
+            <label for="sentence">Tulostettava lause</label>
+            <textarea id="sentence"></textarea>
+            <label for="times">Toistot:</label><input type="number" id="times">
+            <input id="generate" type="button" value="Generate" onclick="generateText()">
+        </form>
+        <div id="generatedText" class="bordered"></div>
+        <hr>
+		
+		
+        <!-- Tehtävä 3. Salasana -->
+		<h2>3. Toistolause</h2>
+		<p>Pyydä käyttäjää antamaan salasana "ThouShallNotPass" windows.prompt()-funktiolla. Pyydä niin monta kertaa uudestaan, että käyttäjä syöttää salasanan oikein. Kun salasana menee oikein, ilmoita siitä käyttäjälle Alertilla. Vinkki: Nelos-luennon esimerkki ja tulee käyttää toistolausetta.</p>
+
+		<h2>4. tehtävä: Tee funktio, joka tarkastaa syötetyn tekstin pituuden ja palauttaa sen alert-boxissa käyttäjälle.</h2>
+        <p></p>
+        <form id="userForm" class="bordered" onsubmit="checkLength()">
+            <label for="text4length">Text: </label><input type="text" id="text4length">
+            <input type="submit">
+        </form>
+		<script>
+		</script>
+        <hr>
+		<h2>5. tehtävä: Tee funktio, joka kopioi syötetystä tekstistä merkit väliltä 2 ja 5. Jos tuolla välillä on numero, niin palauttaa käyttäjälle ilmoituksen "It's a number!" alert-boxissa ja jos ei ole, niin viesti on "It's not a number!". Tarvitset tehtävässä funktiot substring, number ja isinteger</h2>
+        <p></p>
+		<form id="userForm2" class="bordered" onsubmit="checkChars()">
+        <label for="text4chars">Text: </label><input type="text" id="text4chars">
+        <input type="submit">
+		</form>
+		<script>
+		</script>
+        <hr>
+		<h2>6. tehtävä: Tee funktio, joka yhdistää formiin syötetyt etu- ja sukunimen kokonimeksi, joka ilmoitetaan käyttäjälle alert-boxissa</h2>
+        <p></p>
+		<p></p>
+		<form id="userForm3" class="bordered" onsubmit="concatChars()">
+        <label for="firstname2">FirstName: </label><input type="text" id="firstname2">
+		<label for="lastname2">LastName: </label><input type="text" id="lastname2">
+        <input type="submit">
+		<p id="writeHere"><p>
+		</form>
+		<script>
+		</script>
+		
+		<h2>7. tehtävä: Tee funktio, joka poimii syötetystä päivämäärästä erikseen vuoden, kuukauden, päivän ja viikonpäivän ja tulostaa ne alla olevaan laatikkoon. Huomaa, älä klikkaa nappia, vaan käytä onchange-tapahtumaa.</h2>
+        <p></p>
+		<form id="userForm4" class="bordered">
+        <label for="date2parts">Date: </label><input type="date" id="date2parts" onchange="checkParts()">
+        <input type="submit">
+		</form>
+        <div id="dateText" class="bordered"></div>
+
+		<h2>8. tehtävä: Tee toistolause, joka laskee yhdestä lomakkeelle antamaasi lukuun asti luvut yhteen. Käytä tässäkin onchange-tapahtumaa</h2>
+        <p></p>
+		<form id="userForm5" class="bordered" onchange="sumLoop()">
+        <label for="summable">Kierrokset: </label><input type="number" id="summable">
+        <input type="submit">
+		</form>
+		<div id="summa" class="bordered"></div>
+    </main>
+	<script src="vt3.js"></script>
+    <footer>
+        <a href="viikkotehtava2.html">&lt;&lt; Edellinen</a> || <a href="viikkotehtava4.html">Seuraava &gt;&gt;</a>
+        <p>© Mikko Kulmala</p>
+    </footer>
+
+</body></html>
