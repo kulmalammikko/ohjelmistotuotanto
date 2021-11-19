@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+    <title>Viikkotehtävät 4</title>
+	<link rel="stylesheet" href="./WS1 - Hello World_files/styles.css">
+</head>
+<body>
+    <header>
+        <h2><a>Ohjelmistotuotannon ja ohjelmoinnin perusteet</a></h2>
+        <h1>Viikkotehtävät 4</h1>
+    </header>
+    <main>
+		<h1> Muuttujat ja operattorit </h1>
+        <h2>Tehtävä 1: Tee muuttujat a = 100 ja b = 200. Kirjoita lukujen kertolasku alla olevaan taulukkoon.</h2>
+		<div id="write-task1" class="bordered">
+
+        </div>
+        <h2>Tehtävä 2: Luo muuttujat text1 = "Seinäjoen " ja text2 = "kaupunki". Kirjoita alla olevaan taulukkoon.</h2>
+		<div id="write-task2" class="bordered">
+
+        </div>
+        <h2>Tehtävä 3: Poimi tekstikentistä tiedot omiin muuttujiinsa. Yhdistä tiedot uuteen muuttujaan ja kirjoita alla olevaan laatikkoon. Riittää, että kirjoitat kentissä olevat nimet, ei tarvi pystyä päivittämään.</h2>
+		<label for="firstname">Etunimi:</label><input type="text" id="firstname-task3" value="Pertti">
+        <label for="lastname">Sukunimi:</label><input type="text" id="lastname-task3" value="Virtanen">
+		<div id="write-task3" class="bordered">
+
+        </div>
+        <h2>Tehtävä 4: Poimi tekstikentistä tiedot omiin muuttujiinsa. Yhdistä kentät tiedon muuttuessa alla olevaan laatikkoon. Huom! Muista tapahtumakutsut ja funktiot.</h2>
+		<label for="firstname2">Etunimi:</label><input type="text" id="firstname-task4" onchange="writeName()">
+        <label for="lastname2">Sukunimi:</label><input type="text" id="lastname-task4" onchange="writeName()">
+		<div id="write-task4" class="bordered">
+
+        </div>
+		
+		<h1> Ehtolauseet </h1>
+		<!-- Tehtävä 5. setAttribute -->
+        <h2>Tehtävä 5: Luo ehtolause, joka tarkistaa, onko luku suurempi kuin nolla. Kirjoita alla olevaan laatikkoon +, jos luku on positiivinen ja -, jos negatiivinen.</h2>
+		<label for="checkedNumber">Numero:</label><input type="text" id="checkedNumber" onchange="checkNumber()">
+		<div id="write-task5" class="bordered">
+		
+        </div>
+		
+		<h2>Tehtävä 6: Luo ehtolause, joka tarkastaa kenttään syötetyn numeron ja toivottaa "Hyvää huomenta!" klo 6-12, "Hyvää iltapäivää!" 12-18, "Oikein hyvää iltaa" 18-24 ja "Hyvää yötä" 0-6 alla olevassa laatikossa. Huomioi myös virheellinen syöttö.</h2>
+		<label for="dayHour">Numero:</label><input type="text" id="dayHour" onchange="checkTime()">
+		<div id="write-task6" class="bordered">
+
+        </div>
+		
+		<h2>Tehtävä 7: Luo ehtolause, joka muuttaa alla olevan laatikon taustavärin valittaessa väri klikkauksella avautuvasta valikosta Enterin painalluksen jälkeen. Vaihtoehdot hopea, vihreä, keltainen ja ruskea. Muu jättää kentän valkoiseksi. </h2>
+
+		<label for="color_entries">Väri: </label>
+		<input id="color_entry" list="color_entries" name="color_entry"  onchange="changeColor()">
+		<datalist id="color_entries">
+			<option value = "hopea">
+			<option value = "vihreä">
+			<option value = "keltainen">
+			<option value = "ruskea">
+			<option value = "muu">
+		</datalist>
+
+		
+		<div id="write-task7" class="bordered">
+
+        </div>
+		
+		<h1>Toistolauseet</h1>
+		<h2>Tehtävä 8: Tee toistolause, joka arpoo Math.floor(math.random*10)-kaavalla jokaisella läpikäynnillä aina uuden luvun muuttujaan tarkastusta varten. Lopeta looppi, jos luku on suurempi tai yhtä suuri kuin 7. Kirjoita arvotut numerot alekkain alla olevaan taulukkoon.</h2>
+		<div id="write-task8" class="bordered">
+
+        </div>
+		
+		<h2>Tehtävä 9: Tee toistolause, joka kirjoittaa alla olevaan taulukkoon yhteensä viisi kertaa vuorotellen Toimii ja ei toimi.</h2>
+		<div id="write-task9" class="bordered">
+		
+        </div>	
+
+		<h2>Tehtävä 10: Tee toistolause, joka muuttaa kaikki h1-tagillisten kenttien tekstin punaiseksi. Huom. saat käytyä nämä läpi toistolauseella ja getElementsByTagName("h1")[i]-rakenteella, jossa i = toistolauseen iteraattori.</h2>
+		<div id="write-task10" class="bordered">
+		
+        </div>			
+		
+		<h1> Yhdistely + metodit </h1>
+		<h2>Tehtävä 11: Tarkista, onko käyttäjän syöttämä tieto numero. Jos on, niin vähennä tuhannesta kaikki luvut ykkösestä käyttäjän antamaan lukuun ja kirjoita lopputulos alla olevaan taulukkoon. Jos syöte ei ole numero, niin tulosta teksti toistolauseella viisi kertaa alla olevaan taulukkoon.</h2>
+
+		<label for="text-input">Syöte:</label><input type="text" id="text-input" onchange="checkInput()">
+		<div id="write-task11" class="bordered">
+				
+        </div>
+		
+		<div>
+		
+		<h2>Tehtävä 12: Lipun hinnan tarkastus. Kun käyttäjä muuttaa alla olevia valintoja, taulukkoon kirjoitetaan lipun hinta. Peruslippu 10€, opiskelija -50%, eläkeläinen -75% ja työtön -25%. Promokoodilla PromoCode -10% lisäalennus kaikille ryhmille. Lapset ja yli 100-vuotiaat ilmaiseksi, tarkastetaan iästä.</h2>
+
+		<form>
+		<label for="aleryhmat">Alennus: </label>
+		<input id="aleryhma" list="aleryhmat" name="aleryhma" onchange="checkDiscount()">
+		<datalist id="aleryhmat">
+			<option value = "perus">
+			<option value = "eläkeläinen">
+			<option value = "lapsi">
+			<option value = "opiskelija">
+			<option value = "työtön">
+		</datalist>
+		<label for="age-input">Ikä:</label><input type="text" id="age_input" onchange="checkDiscount()">
+		<label for="promo-input">Promo:</label><input type="text" id="promo_input" onchange="checkDiscount()">
+		</form>
+		<div id="write-task12" class="bordered">   
+
+		</div>
+		
+		
+		<h1> Tekstifunktiot substring ja length </h1>
+		
+		<h2>Tehtävä 13: Poimi syötetystä tekstistä merkit kolmannen ja viimeisen merkin väliltä ja kirjoita alla olevaan laatikkoon.</h2>
+
+		<label for="text-input2">Syöte:</label><input type="text" id="text-input2" onchange="copyChars()">
+		<div id="write-task13" class="bordered">
+				
+        </div>
+		
+		<h2>Tehtävä 14: Poimi syötetystä tekstistä merkit kolmannen ja toiseksi viimeisen merkin väliltä. Kirjoita alla olevaan taulukkoon merkit ja onko kyseessä numero vai teksti.</h2>
+
+		<label for="text-input3">Syöte:</label><input type="text" id="text-input3" onchange="copyChars2()">
+		<div id="write-task14" class="bordered">
+				
+        </div>
+		
+
+    </main>
+		<script src="vt4.js"></script>
+    <footer>
+        <a href="viikkotehtava3.html">&lt;&lt; Edellinen</a> || <a href="index.html">Seuraava &gt;&gt;</a>
+        <p>© Mikko Kulmala</p>
+    </footer>
+</body></html>
